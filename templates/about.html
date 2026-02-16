@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
 </head>
 <body>
-  <h1>Romario Grant</h1>
-  <p>
-    My name is Romario Grant. I am a 22 years old Computer Science student with a goal of becoming a software engineer. Outside of school, I am really into photography and music. Right now, my favorite artist is Sishii. This summer I am hoping to attend a FIFA World Cup match and, if everything works out, go skydiving for the first time.
-  </p>
+    <div class="card">
+        <h1>Romario Grant</h1>
+
+        <img src="{{ url_for('static', filename='romario.jpeg') }}" alt="Romario Grant" width="300">
+
+        <p>
+            My name is Romario Grant. I am a 22 years old Computer Science student with a goal of becoming a software engineer. Outside of school, I am really into photography and music. Right now, my favorite artist is Sishii. This summer I am hoping to attend a FIFA World Cup match and, if everything works out, go skydiving for the first time.
+        </p>
+    </div>
 </body>
+
 </html>
